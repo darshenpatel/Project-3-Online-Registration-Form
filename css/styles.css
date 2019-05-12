@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* *::selection {
+  background: #ddd;
+} */
+
+
+body {
+  /* background-image: url('../images/backdrop-1.jpg'); */
+  background-position: center;
+  font-family: 'Nunito', Arial, sans-serif;
+}
+
+
+main, footer {
+  padding: 0 50px;
+}
+
+
+.header{
+  background-color: teal;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+
+.top {
+  margin-top: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+.top h2 {
+  color: ;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+
+.top p{
+  color: ;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+
+.form-break {
+  border-top: 5px #2D3945 solid;
+  height: 2px;
+  border-bottom: 2px #2D3945 solid;
+  border-left: 0;
+  border-right: 0;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+form legend {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+fieldset {
+  border: 0;
+  margin: 30px 0;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: teal;
+}
+
+
+.flex input::placeholder {
+  color: #ccc;
+  text-align: right;
+  font-style: italic;
+}
+
+
+.flex input,
+.flex select {
+  background-color: #EFF0F1;
+  border: #EFF0F1 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+.flex input:focus,
+.flex select:focus {
+ outline: none;
+ border: teal 1px solid;
+ box-shadow: 0 0 2px grey;
+}
+
+
+.newsletter-options {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.newsletter-options label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: teal;
+}
+
+.newsletter-options input,
+.newsletter-options select {
+  margin: 5px 0;
+}
+
+
+.newsletter-options textarea {
+  min-height: 100px;
+  min-width: 100px;
+  background-color: #EFF0F1;
+  border: #EFF0F1 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+button {
+  width: 50%;
+  margin: 0 auto;
+  background-color: teal;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.footer p {
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+
+@media (min-width:768px) {
+
+  main, footer {
+    margin: 0 auto;
+    max-width: 65%;
+  }
+
+  .header{
+    padding: 5px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .top {
+    line-height: 2;
+  }
+
+  .top h2 {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .top p {
+    padding-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form legend {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex .newsletter-options label {
+  font-weight: 500;
+  width: 150px;
+}
+
+.flex input,
+.flex select {
+  background-color: #EFF0F1;
+  border: #EFF0F1 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.flex input:focus,
+.flex select:focus, {
+ outline: none;
+ border: teal 1px solid;
+ box-shadow: 0 0 2px grey;
+}
+
+.newsletter-options input:focus,
+.newsletter-options textarea:focus {
+  outline: none;
+  border: teal 1px solid;
+  box-shadow: 0 0 2px grey;
+ }
+
+
+}
