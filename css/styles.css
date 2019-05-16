@@ -84,7 +84,9 @@ fieldset {
 
 .flex {
   display: flex;
+  justify-content:flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex label {
@@ -121,20 +123,29 @@ fieldset {
 
 .newsletter-options {
   display: flex;
+  justify-content:flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 
-.newsletter-options label {
+.checkboxes {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   color: teal;
 }
 
+
+/* .checkboxes label {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
 .newsletter-options input,
 .newsletter-options select {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 
@@ -215,9 +226,8 @@ button {
   }
 
 .flex {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .flex .newsletter-options label {

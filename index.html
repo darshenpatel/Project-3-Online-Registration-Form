@@ -120,7 +120,10 @@
 
           <div class="newsletter-options">
 
-            <label for="news-options">Select How To Receive Your News</label>
+            <h4>Select How To Receive Your News</h4>
+
+            <div class="checkboxes">
+
               <input type="checkbox" id="html_news" name="html" placeholder="" unchecked>
                 <label for="html-news">HTML News</label>
               <input type="checkbox" id="" name="css_news" placeholder="css" unchecked>
@@ -128,13 +131,26 @@
               <input type="checkbox" id="" name="javascript_news" placeholder="javascript" unchecked>
                 <label for="javascript-news">Javascript News</label>
 
-            <label for="news-format">Newsletter Format</label>
-              <input type="radio" id="html" name="html" value="html"><label for="html_text">HTML</label><br>
-              <input type="radio" id="plain_text" name="plain_text" value="plain_text">
+            </div>
+
+            <h4>Newsletter Format</h4>
+
+            <div class="radio-buttons">
+
+              <!-- Learning Lesson: Radio Buttons In A Group Must Have Same Name Attribute  -->
+              <div>
+                <input type="radio" id="html" name="format" value="html">
+                <label for="html_text">HTML</label><br>
+              </div>
+
+              <div>
+                <input type="radio" id="plain_text" name="format" value="plain_text">
                 <label for="plain_text">Plain Text</label>
+              </div>
 
+            </div>
 
-            <label for="more-options">What Other Topics Interest You?</label>
+            <h4>What Other Topics Interest You?</h4>
               <textarea name="name" rows="8" cols="80"></textarea>
 
           </div>
