@@ -63,6 +63,11 @@ main, footer {
 }
 
 
+.newsletter-break {
+  border: 1px #2D3945 solid;
+}
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -78,7 +83,12 @@ form legend {
 
 fieldset {
   border: 0;
-  margin: 30px 0;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 15px;
+  font-style: italic;
 }
 
 
@@ -122,34 +132,47 @@ fieldset {
 }
 
 
-.newsletter-options {
+/* .newsletter-options {
   display: flex;
-  justify-content:flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-}
+} */
 
 
 .html-checkbox,
 .css-checkbox,
 .javascript-checkbox {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-weight: 500;
   color: teal;
 }
 
 
-
+.html-radio,
+.plain-text-radio {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: teal;
+}
 
 
 .newsletter-options input,
 .newsletter-options select {
+  /* Learning Lesson: Width of Auto For Inputs */
+  width: auto;
   margin: 10px 0;
 }
 
 
+.newsletter-options label {
+  margin: 0 10px;
+}
+
+
 .newsletter-options textarea {
+  margin-top: 20px;
   min-height: 100px;
   min-width: 100px;
   background-color: #EFF0F1;
@@ -189,7 +212,7 @@ button {
 
   main, footer {
     margin: 0 auto;
-    max-width: 65%;
+    max-width: 30%;
   }
 
   .header{
