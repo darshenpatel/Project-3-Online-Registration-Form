@@ -84,10 +84,10 @@ fieldset {
 
 .flex {
   display: flex;
-  justify-content:flex-start;
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 
 .flex label {
   margin-top: 30px;
@@ -124,23 +124,22 @@ fieldset {
 .newsletter-options {
   display: flex;
   justify-content:flex-start;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 
-.checkboxes {
+.html-checkbox,
+.css-checkbox,
+.javascript-checkbox {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   color: teal;
 }
 
-
-/* .checkboxes label {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 
 .newsletter-options input,
@@ -215,7 +214,6 @@ button {
 
   form {
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
 
@@ -226,8 +224,10 @@ button {
   }
 
 .flex {
-    flex-direction: row;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .flex .newsletter-options label {

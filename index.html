@@ -33,22 +33,22 @@
           <div class="flex">
 
             <label for="first-name">First Name</label>
-            <input type="text" id="user_name" name="first_name" placeholder="required" required>
+            <input type="text" id="user_name" name="first_name" placeholder="required " required>
 
             <label for="last-name">Last Name</label>
-            <input type="text" id="user_name" name="last_name" placeholder="required" required>
+            <input type="text" id="user_name" name="last_name" placeholder="required " required>
 
             <label for="email">Email</label>
-            <input type="email" id="user_email" name="email_" placeholder="required" required>
+            <input type="email" id="user_email" name="email_" placeholder="required " required>
 
             <label for="number">Phone Number</label>
-            <input type="text" id="user_number" name="phone_number" placeholder="required" required>
+            <input type="text" id="user_number" name="phone_number" placeholder="required " required>
 
             <label for="address">Street Address</label>
-            <input type="text" id="user_address" name="street_address" placeholder="required" required>
+            <input type="text" id="user_address" name="street_address" placeholder="required " required>
 
             <label for="city">City</label>
-            <input type="text" id="user_city" name="city" placeholder="required" required>
+            <input type="text" id="user_city" name="city" placeholder="required " required>
 
             <label for="state">State</label><br>
             <select id="user_state" name="state">
@@ -107,7 +107,7 @@
             </select>
 
             <label for="zip-code">Zip Code</label>
-            <input type="text" id="user_zip" name="zip_code" placeholder="required" required>
+            <input type="text" id="user_zip" name="zip_code" placeholder="required " required>
 
           </div>
 
@@ -122,33 +122,41 @@
 
             <h4>Select How To Receive Your News</h4>
 
-            <div class="checkboxes">
-
-              <input type="checkbox" id="html_news" name="html" placeholder="" unchecked>
-                <label for="html-news">HTML News</label>
-              <input type="checkbox" id="" name="css_news" placeholder="css" unchecked>
-                <label for="css-news">CSS News</label>
-              <input type="checkbox" id="" name="javascript_news" placeholder="javascript" unchecked>
-                <label for="javascript-news">Javascript News</label>
-
+            <div class="html-checkbox">
+              <label class="checkbox-label" for="html-news">
+              <input type="checkbox" id="html_news" name="html" value="is-html"/>
+              <span>HTML News</span>
+              </label>
             </div>
+
+            <div class="css-checkbox">
+              <label class="checkbox-label" for="css-news">
+              <input type="checkbox" id="css_news" name="css" value="is-css"/>
+              <span>CSS News</span>
+              </label>
+            </div>
+
+            <div class="javascript-checkbox">
+              <label class="checkbox-label" for="javascript-news">
+              <input type="checkbox" id="javascript_news" name="javascript" value="is-javascript"/>
+              <span>Javascript News</span>
+              </label>
+            </div>
+
 
             <h4>Newsletter Format</h4>
 
-            <div class="radio-buttons">
-
               <!-- Learning Lesson: Radio Buttons In A Group Must Have Same Name Attribute  -->
-              <div>
+              <div class="html-radio">
                 <input type="radio" id="html" name="format" value="html">
-                <label for="html_text">HTML</label><br>
+                <label for="html-text">HTML</label>
               </div>
 
-              <div>
-                <input type="radio" id="plain_text" name="format" value="plain_text">
-                <label for="plain_text">Plain Text</label>
+              <div class="plain-text-radio">
+                <input type="radio" id="plain-text" name="format" value="plain-text">
+                <label for="plain-text">Plain Text</label>
               </div>
 
-            </div>
 
             <h4>What Other Topics Interest You?</h4>
               <textarea name="name" rows="8" cols="80"></textarea>
