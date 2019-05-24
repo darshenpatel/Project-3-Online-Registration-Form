@@ -212,7 +212,7 @@ button {
 
 main, footer {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 
@@ -257,9 +257,8 @@ form legend {
 
 .flex {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 
