@@ -121,7 +121,7 @@ h4 {
   background-color: #EFF0F1;
   border: #EFF0F1 1px solid;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
 
 }
 
@@ -183,7 +183,7 @@ h4 {
 
 
 button {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   background-color: teal;
   color: white;
@@ -212,7 +212,7 @@ button {
 
 main, footer {
   margin: 0 auto;
-  max-width: 40%;
+  max-width: 60%;
 }
 
 
@@ -251,14 +251,14 @@ form {
 form legend {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 
 .flex {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -266,16 +266,21 @@ form legend {
   display: flex;
   flex-direction: row;
   font-weight: 500;
-  width: 100%;
+  width: 20%;
+  margin-top: 10px;
 }
 
 
 .flex input,
 .flex select {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
   background-color: #EFF0F1;
   border: #EFF0F1 1px solid;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
+  width: 80%;
 }
 
 
@@ -292,6 +297,14 @@ form legend {
   outline: none;
   border: teal 1px solid;
   box-shadow: 0 0 2px grey;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+button {
+  width: 100%;
 }
 
 
