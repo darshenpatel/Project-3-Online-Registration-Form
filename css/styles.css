@@ -41,14 +41,12 @@ main, footer {
 
 
 .top h2 {
-  color: ;
   font-weight: bold;
   padding-bottom: 10px;
 }
 
 
 .top p{
-  color: ;
   font-style: italic;
   padding-bottom: 10px;
 }
@@ -122,7 +120,7 @@ h4 {
   border: #EFF0F1 1px solid;
   border-radius: 5px;
   padding: 10px 10px;
-
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 
@@ -176,7 +174,7 @@ h4 {
   min-height: 100px;
   min-width: 100px;
   background-color: #EFF0F1;
-  border: #EFF0F1 1px solid;
+  border: #EFF0F5 1px solid;
   border-radius: 5px;
   padding: 5px 10px;
 }
@@ -277,15 +275,16 @@ form legend {
   flex-direction: row;
   margin-bottom: 50px;
   background-color: #EFF0F1;
-  border: #EFF0F1 1px solid;
+  border: #EFF0F5 1px solid;
   border-radius: 5px;
   padding: 10px 10px;
   width: 80%;
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 
 .flex input:focus,
-.flex select:focus, {
+.flex select:focus {
  outline: none;
  border: teal 1px solid;
  box-shadow: 0 0 2px grey;
